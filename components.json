@@ -1,0 +1,31 @@
+{
+  "index_version": 1,
+  "release_tag": "packs-v1",
+  "release_base": "https://github.com/Hemues/smart-translator-languages/releases/download",
+  "notes": "Metadata for make_index.py: it adds bytes + sha256 from the files in dist/ and writes packs.json (the docs/04 §3 format the app reads). 'asset' is the release asset name in this repo, 'upstream' the pinned original — the app tries our copy first, the original second, and verifies the same sha256 whichever answered.",
+  "components": [
+    {
+      "id": "parakeet-tdt-0.6b-v3-int8",
+      "kind": "asr",
+      "title": "Parakeet-TDT-0.6B-v3 — offline speech recognition, 25 European languages incl. Hungarian",
+      "languages": ["bg", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "hr", "hu", "it", "lt", "lv", "mt", "nl", "pl", "pt", "ro", "ru", "sk", "sl", "sv", "uk"],
+      "asset": "sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8.tar.bz2",
+      "licence": "model CC-BY-4.0 (NVIDIA) · packaging Apache-2.0 (sherpa-onnx)",
+      "licence_url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "archive": true,
+      "keep": ["encoder.int8.onnx", "decoder.int8.onnx", "joiner.int8.onnx", "tokens.txt"]
+    },
+    {
+      "id": "silero-vad",
+      "kind": "vad",
+      "title": "Silero VAD — hears where a sentence ends, for hands-free listening",
+      "languages": [],
+      "asset": "silero_vad.onnx",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx",
+      "licence": "MIT (Silero)",
+      "licence_url": "https://github.com/snakers4/silero-vad",
+      "file": "silero_vad.onnx"
+    }
+  ]
+}

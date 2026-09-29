@@ -1,0 +1,2 @@
+# the pack files themselves are release assets, never git objects (GitHub caps git files at 100 MB; releases allow 2 GB)
+dist/
