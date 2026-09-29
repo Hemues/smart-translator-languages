@@ -29,13 +29,14 @@ def sha256(path: Path) -> str:
 
 def build() -> dict:
     meta = json.loads((ROOT / "components.json").read_text(encoding="utf-8"))
-    base = meta["release_base"].rstrip("/") + "/" + meta["release_tag"]
     out = []
     for c in meta["components"]:
         asset = DIST / c["asset"]
         if not asset.is_file():
             sys.exit(f"missing dist/{c['asset']} — put the file in dist/ first")
-        entry = {k: c[k] for k in ("id", "kind", "title", "languages") if k in c}
+        # a component may live in its own release (voices-v1 for the voices); the top-level tag is the default
+        base = meta["release_base"].rstrip("/") + "/" + c.get("release_tag", meta["release_tag"])
+        entry = {k: c[k] for k in ("id", "kind", "engine", "title", "language", "voice", "gender", "quality", "languages") if k in c}
         entry["bytes"] = asset.stat().st_size
         entry["sha256"] = sha256(asset)
         entry["urls"] = [f"{base}/{c['asset']}"] + ([c["upstream"]] if c.get("upstream") else [])

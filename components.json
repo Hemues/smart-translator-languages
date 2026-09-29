@@ -110,7 +110,8 @@
       "licence_url": "https://collectivat.cat/asr#upc-festcat-tts-corpora",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-ca_ES-upc_ona-medium"
+      "dir": "packs/tts/vits-piper-ca_ES-upc_ona-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-cs_CZ-jirka-medium",
@@ -130,7 +131,8 @@
       "licence_url": "https://github.com/NabuCasa/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-cs_CZ-jirka-medium"
+      "dir": "packs/tts/vits-piper-cs_CZ-jirka-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-cy_GB-gwryw_gogleddol-medium",
@@ -150,7 +152,8 @@
       "licence_url": "https://git.techiaith.bangor.ac.uk/data-porth-technolegau-iaith/corpws-talentau-llais",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-cy_GB-gwryw_gogleddol-medium"
+      "dir": "packs/tts/vits-piper-cy_GB-gwryw_gogleddol-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-da_DK-talesyntese-medium",
@@ -190,7 +193,8 @@
       "licence_url": "https://github.com/thorstenMueller/Thorsten-Voice",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-de_DE-thorsten-medium"
+      "dir": "packs/tts/vits-piper-de_DE-thorsten-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-el_GR-rapunzelina-low",
@@ -210,7 +214,8 @@
       "licence_url": "https://www.kaggle.com/datasets/bryanpark/greek-single-speaker-speech-dataset",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-el_GR-rapunzelina-low"
+      "dir": "packs/tts/vits-piper-el_GR-rapunzelina-low",
+      "gender": "f"
     },
     {
       "id": "vits-piper-en_GB-alan-medium",
@@ -230,7 +235,8 @@
       "licence_url": "https://github.com/MycroftAI/mimic3-voices/blob/master/voices/en_UK/apope_low",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-en_GB-alan-medium"
+      "dir": "packs/tts/vits-piper-en_GB-alan-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-en_US-lessac-medium",
@@ -250,7 +256,8 @@
       "licence_url": "https://www.cstr.ed.ac.uk/projects/blizzard/2013/lessac_blizzard2013/",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-en_US-lessac-medium"
+      "dir": "packs/tts/vits-piper-en_US-lessac-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-es_ES-davefx-medium",
@@ -270,7 +277,8 @@
       "licence_url": "https://github.com/NabuCasa/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-es_ES-davefx-medium"
+      "dir": "packs/tts/vits-piper-es_ES-davefx-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-eu_ES-antton-medium",
@@ -290,7 +298,8 @@
       "licence_url": "https://huggingface.co/datasets/itzune/antton-dataset",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-eu_ES-antton-medium"
+      "dir": "packs/tts/vits-piper-eu_ES-antton-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-fi_FI-harri-medium",
@@ -310,7 +319,8 @@
       "licence_url": "https://www.kaggle.com/bryanpark/finnish-single-speaker-speech-dataset",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-fi_FI-harri-medium"
+      "dir": "packs/tts/vits-piper-fi_FI-harri-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-fr_FR-siwis-medium",
@@ -330,7 +340,8 @@
       "licence_url": "https://datashare.is.ed.ac.uk/handle/10283/2353",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-fr_FR-siwis-medium"
+      "dir": "packs/tts/vits-piper-fr_FR-siwis-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-hu_HU-anna-medium",
@@ -350,7 +361,8 @@
       "licence_url": "https://github.com/NabuCasa/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-hu_HU-anna-medium"
+      "dir": "packs/tts/vits-piper-hu_HU-anna-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-hu_HU-berta-medium",
@@ -370,7 +382,8 @@
       "licence_url": "https://github.com/NabuCasa/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-hu_HU-berta-medium"
+      "dir": "packs/tts/vits-piper-hu_HU-berta-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-hu_HU-imre-medium",
@@ -390,7 +403,8 @@
       "licence_url": "https://github.com/NabuCasa/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-hu_HU-imre-medium"
+      "dir": "packs/tts/vits-piper-hu_HU-imre-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-is_IS-bui-medium",
@@ -410,7 +424,8 @@
       "licence_url": "http://hdl.handle.net/20.500.12537/104",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-is_IS-bui-medium"
+      "dir": "packs/tts/vits-piper-is_IS-bui-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-it_IT-paola-medium",
@@ -430,7 +445,8 @@
       "licence_url": "https://huggingface.co/datasets/paolapersico1/Voice-Dataset-Italian",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-it_IT-paola-medium"
+      "dir": "packs/tts/vits-piper-it_IT-paola-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-lv_LV-aivars-medium",
@@ -450,7 +466,8 @@
       "licence_url": "https://huggingface.co/RaivisDejus/Piper-lv_LV-Aivars-medium",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-lv_LV-aivars-medium"
+      "dir": "packs/tts/vits-piper-lv_LV-aivars-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-nl_NL-alex-medium",
@@ -470,7 +487,8 @@
       "licence_url": "https://github.com/OHF-Voice/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-nl_NL-alex-medium"
+      "dir": "packs/tts/vits-piper-nl_NL-alex-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-no_NO-talesyntese-medium",
@@ -510,7 +528,8 @@
       "licence_url": "https://github.com/OHF-Voice/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-pl_PL-gosia-medium"
+      "dir": "packs/tts/vits-piper-pl_PL-gosia-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-pt_PT-tugao-medium",
@@ -530,7 +549,8 @@
       "licence_url": "https://github.com/OHF-Voice/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-pt_PT-tugao-medium"
+      "dir": "packs/tts/vits-piper-pt_PT-tugao-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-ro_RO-mihai-medium",
@@ -550,7 +570,8 @@
       "licence_url": "https://github.com/NabuCasa/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-ro_RO-mihai-medium"
+      "dir": "packs/tts/vits-piper-ro_RO-mihai-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-ru_RU-irina-medium",
@@ -570,7 +591,8 @@
       "licence_url": "https://github.com/RHVoice/RHVoice",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-ru_RU-irina-medium"
+      "dir": "packs/tts/vits-piper-ru_RU-irina-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-sk_SK-lili-medium",
@@ -590,7 +612,8 @@
       "licence_url": "https://github.com/NabuCasa/voice-datasets",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-sk_SK-lili-medium"
+      "dir": "packs/tts/vits-piper-sk_SK-lili-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-sl_SI-artur-medium",
@@ -610,7 +633,8 @@
       "licence_url": "https://huggingface.co/datasets/ppisljar/artur_studio_tts/",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-sl_SI-artur-medium"
+      "dir": "packs/tts/vits-piper-sl_SI-artur-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-sq_AL-edon-medium",
@@ -630,7 +654,8 @@
       "licence_url": "https://huggingface.co/edonseki/folsh.ai",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-sq_AL-edon-medium"
+      "dir": "packs/tts/vits-piper-sq_AL-edon-medium",
+      "gender": "m"
     },
     {
       "id": "vits-piper-sr_RS-serbski_institut-medium",
@@ -690,7 +715,8 @@
       "licence_url": "https://github.com/marytts/dfki-ot-data/",
       "archive": true,
       "keep": [],
-      "dir": "packs/tts/vits-piper-tr_TR-dfki-medium"
+      "dir": "packs/tts/vits-piper-tr_TR-dfki-medium",
+      "gender": "f"
     },
     {
       "id": "vits-piper-uk_UA-ukrainian_tts-medium",

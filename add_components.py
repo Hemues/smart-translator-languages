@@ -26,6 +26,12 @@ LANG_NAMES = {
 }
 # European languages the Parakeet pack does not cover; Omnilingual ASR (1,600 languages) serves them
 OMNI_LANGS = ["sq", "be", "bs", "ca", "cy", "eu", "ga", "gl", "is", "ka", "lb", "mk", "no", "sr", "tr"]
+# voice gender where the voice's name or card makes it clear (shown in the app's voice picker; left out when unsure)
+GENDER = {
+    "anna": "f", "berta": "f", "imre": "m", "lessac": "f", "alan": "m", "thorsten": "m", "siwis": "f", "davefx": "m", "paola": "f",
+    "gosia": "f", "irina": "f", "alex": "m", "jirka": "m", "lili": "f", "artur": "m", "mihai": "m", "harri": "m", "rapunzelina": "f",
+    "bui": "m", "aivars": "m", "edon": "m", "gwryw_gogleddol": "m", "upc_ona": "f", "antton": "m", "tugao": "m", "dfki": "f",
+}
 
 
 def card_field(tar: Path, field: str) -> str:
@@ -50,7 +56,7 @@ def piper_entry(tar: Path) -> dict:
     return {
         "id": lid, "kind": "tts", "engine": "piper_vits",
         "title": f"{name} voice — {voice.replace('_', ' ')} ({quality.replace('_', '-')}, {lang}_{region})",
-        "language": lang, "voice": voice, "quality": quality, "languages": [lang],
+        "language": lang, "voice": voice, "quality": quality, "languages": [lang], **({"gender": GENDER[voice]} if voice in GENDER else {}),
         "asset": tar.name, "upstream": UP_TTS + tar.name, "release_tag": "voices-v1",
         "licence": f"voice: {licence} · Piper/sherpa-onnx: MIT/Apache-2.0", "licence_url": url or "https://github.com/rhasspy/piper",
         "archive": True, "keep": [], "dir": f"packs/tts/{lid}",
@@ -82,6 +88,11 @@ def main():
         else:
             continue
         if e["id"] in known:
+            # already described: refresh the derived fields (gender, release tag) without touching hand-edited ones
+            old = next(c for c in meta["components"] if c["id"] == e["id"])
+            for k in ("gender", "release_tag", "engine"):
+                if k in e and old.get(k) != e[k]:
+                    old[k] = e[k]; print(f"~ {e['id']}: {k} = {e[k]}")
             continue
         meta["components"].append(e); known.add(e["id"]); added += 1
         print(f"+ {e['id']}: {e['title']}  [{e['licence']}]")
