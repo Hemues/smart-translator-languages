@@ -8,13 +8,44 @@
       "id": "parakeet-tdt-0.6b-v3-int8",
       "kind": "asr",
       "title": "Parakeet-TDT-0.6B-v3 — offline speech recognition, 25 European languages incl. Hungarian",
-      "languages": ["bg", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "hr", "hu", "it", "lt", "lv", "mt", "nl", "pl", "pt", "ro", "ru", "sk", "sl", "sv", "uk"],
+      "languages": [
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "et",
+        "fi",
+        "fr",
+        "hr",
+        "hu",
+        "it",
+        "lt",
+        "lv",
+        "mt",
+        "nl",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sv",
+        "uk"
+      ],
       "asset": "sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8.tar.bz2",
       "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8.tar.bz2",
       "licence": "model CC-BY-4.0 (NVIDIA) · packaging Apache-2.0 (sherpa-onnx)",
       "licence_url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
       "archive": true,
-      "keep": ["encoder.int8.onnx", "decoder.int8.onnx", "joiner.int8.onnx", "tokens.txt"]
+      "keep": [
+        "encoder.int8.onnx",
+        "decoder.int8.onnx",
+        "joiner.int8.onnx",
+        "tokens.txt"
+      ]
     },
     {
       "id": "silero-vad",
@@ -26,6 +57,660 @@
       "licence": "MIT (Silero)",
       "licence_url": "https://github.com/snakers4/silero-vad",
       "file": "silero_vad.onnx"
+    },
+    {
+      "id": "omnilingual-asr-300m-int8",
+      "kind": "asr",
+      "engine": "omnilingual_ctc",
+      "title": "Omnilingual ASR 300M (Meta) — speech recognition for the European languages the Parakeet pack lacks",
+      "languages": [
+        "sq",
+        "be",
+        "bs",
+        "ca",
+        "cy",
+        "eu",
+        "ga",
+        "gl",
+        "is",
+        "ka",
+        "lb",
+        "mk",
+        "no",
+        "sr",
+        "tr"
+      ],
+      "asset": "sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-v2-int8-2026-02-05.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-v2-int8-2026-02-05.tar.bz2",
+      "release_tag": "packs-v1",
+      "licence": "model Apache-2.0 (Meta, omnilingual-asr) · export Apache-2.0 (sherpa-onnx)",
+      "licence_url": "https://github.com/facebookresearch/omnilingual-asr",
+      "archive": true,
+      "keep": [
+        "model.int8.onnx",
+        "tokens.txt"
+      ],
+      "dir": "packs/asr/omnilingual-asr-300m-int8"
+    },
+    {
+      "id": "vits-piper-ca_ES-upc_ona-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Catalan voice — upc ona (medium, ca_ES)",
+      "language": "ca",
+      "voice": "upc_ona",
+      "quality": "medium",
+      "languages": [
+        "ca"
+      ],
+      "asset": "vits-piper-ca_ES-upc_ona-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ca_ES-upc_ona-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC BY-SA 3.0 ES · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://collectivat.cat/asr#upc-festcat-tts-corpora",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-ca_ES-upc_ona-medium"
+    },
+    {
+      "id": "vits-piper-cs_CZ-jirka-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Czech voice — jirka (medium, cs_CZ)",
+      "language": "cs",
+      "voice": "jirka",
+      "quality": "medium",
+      "languages": [
+        "cs"
+      ],
+      "asset": "vits-piper-cs_CZ-jirka-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-cs_CZ-jirka-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/NabuCasa/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-cs_CZ-jirka-medium"
+    },
+    {
+      "id": "vits-piper-cy_GB-gwryw_gogleddol-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Welsh voice — gwryw gogleddol (medium, cy_GB)",
+      "language": "cy",
+      "voice": "gwryw_gogleddol",
+      "quality": "medium",
+      "languages": [
+        "cy"
+      ],
+      "asset": "vits-piper-cy_GB-gwryw_gogleddol-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-cy_GB-gwryw_gogleddol-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: See URL · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://git.techiaith.bangor.ac.uk/data-porth-technolegau-iaith/corpws-talentau-llais",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-cy_GB-gwryw_gogleddol-medium"
+    },
+    {
+      "id": "vits-piper-da_DK-talesyntese-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Danish voice — talesyntese (medium, da_DK)",
+      "language": "da",
+      "voice": "talesyntese",
+      "quality": "medium",
+      "languages": [
+        "da"
+      ],
+      "asset": "vits-piper-da_DK-talesyntese-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-da_DK-talesyntese-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-21/",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-da_DK-talesyntese-medium"
+    },
+    {
+      "id": "vits-piper-de_DE-thorsten-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "German voice — thorsten (medium, de_DE)",
+      "language": "de",
+      "voice": "thorsten",
+      "quality": "medium",
+      "languages": [
+        "de"
+      ],
+      "asset": "vits-piper-de_DE-thorsten-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-de_DE-thorsten-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/thorstenMueller/Thorsten-Voice",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-de_DE-thorsten-medium"
+    },
+    {
+      "id": "vits-piper-el_GR-rapunzelina-low",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Greek voice — rapunzelina (low, el_GR)",
+      "language": "el",
+      "voice": "rapunzelina",
+      "quality": "low",
+      "languages": [
+        "el"
+      ],
+      "asset": "vits-piper-el_GR-rapunzelina-low.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-el_GR-rapunzelina-low.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://www.kaggle.com/datasets/bryanpark/greek-single-speaker-speech-dataset",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-el_GR-rapunzelina-low"
+    },
+    {
+      "id": "vits-piper-en_GB-alan-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "English voice — alan (medium, en_GB)",
+      "language": "en",
+      "voice": "alan",
+      "quality": "medium",
+      "languages": [
+        "en"
+      ],
+      "asset": "vits-piper-en_GB-alan-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_GB-alan-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: See URL · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/MycroftAI/mimic3-voices/blob/master/voices/en_UK/apope_low",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-en_GB-alan-medium"
+    },
+    {
+      "id": "vits-piper-en_US-lessac-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "English voice — lessac (medium, en_US)",
+      "language": "en",
+      "voice": "lessac",
+      "quality": "medium",
+      "languages": [
+        "en"
+      ],
+      "asset": "vits-piper-en_US-lessac-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-lessac-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: https://www.cstr.ed.ac.uk/projects/blizzard/2013/lessac_blizzard2013/license.html · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://www.cstr.ed.ac.uk/projects/blizzard/2013/lessac_blizzard2013/",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-en_US-lessac-medium"
+    },
+    {
+      "id": "vits-piper-es_ES-davefx-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Spanish voice — davefx (medium, es_ES)",
+      "language": "es",
+      "voice": "davefx",
+      "quality": "medium",
+      "languages": [
+        "es"
+      ],
+      "asset": "vits-piper-es_ES-davefx-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-es_ES-davefx-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/NabuCasa/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-es_ES-davefx-medium"
+    },
+    {
+      "id": "vits-piper-eu_ES-antton-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Basque voice — antton (medium, eu_ES)",
+      "language": "eu",
+      "voice": "antton",
+      "quality": "medium",
+      "languages": [
+        "eu"
+      ],
+      "asset": "vits-piper-eu_ES-antton-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-eu_ES-antton-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: Creative Commons Attribution 4.0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://huggingface.co/datasets/itzune/antton-dataset",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-eu_ES-antton-medium"
+    },
+    {
+      "id": "vits-piper-fi_FI-harri-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Finnish voice — harri (medium, fi_FI)",
+      "language": "fi",
+      "voice": "harri",
+      "quality": "medium",
+      "languages": [
+        "fi"
+      ],
+      "asset": "vits-piper-fi_FI-harri-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-fi_FI-harri-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://www.kaggle.com/bryanpark/finnish-single-speaker-speech-dataset",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-fi_FI-harri-medium"
+    },
+    {
+      "id": "vits-piper-fr_FR-siwis-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "French voice — siwis (medium, fr_FR)",
+      "language": "fr",
+      "voice": "siwis",
+      "quality": "medium",
+      "languages": [
+        "fr"
+      ],
+      "asset": "vits-piper-fr_FR-siwis-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-fr_FR-siwis-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC-BY 4.0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://datashare.is.ed.ac.uk/handle/10283/2353",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-fr_FR-siwis-medium"
+    },
+    {
+      "id": "vits-piper-hu_HU-anna-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Hungarian voice — anna (medium, hu_HU)",
+      "language": "hu",
+      "voice": "anna",
+      "quality": "medium",
+      "languages": [
+        "hu"
+      ],
+      "asset": "vits-piper-hu_HU-anna-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-hu_HU-anna-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/NabuCasa/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-hu_HU-anna-medium"
+    },
+    {
+      "id": "vits-piper-hu_HU-berta-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Hungarian voice — berta (medium, hu_HU)",
+      "language": "hu",
+      "voice": "berta",
+      "quality": "medium",
+      "languages": [
+        "hu"
+      ],
+      "asset": "vits-piper-hu_HU-berta-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-hu_HU-berta-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/NabuCasa/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-hu_HU-berta-medium"
+    },
+    {
+      "id": "vits-piper-hu_HU-imre-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Hungarian voice — imre (medium, hu_HU)",
+      "language": "hu",
+      "voice": "imre",
+      "quality": "medium",
+      "languages": [
+        "hu"
+      ],
+      "asset": "vits-piper-hu_HU-imre-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-hu_HU-imre-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/NabuCasa/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-hu_HU-imre-medium"
+    },
+    {
+      "id": "vits-piper-is_IS-bui-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Icelandic voice — bui (medium, is_IS)",
+      "language": "is",
+      "voice": "bui",
+      "quality": "medium",
+      "languages": [
+        "is"
+      ],
+      "asset": "vits-piper-is_IS-bui-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-is_IS-bui-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: See URL · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "http://hdl.handle.net/20.500.12537/104",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-is_IS-bui-medium"
+    },
+    {
+      "id": "vits-piper-it_IT-paola-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Italian voice — paola (medium, it_IT)",
+      "language": "it",
+      "voice": "paola",
+      "quality": "medium",
+      "languages": [
+        "it"
+      ],
+      "asset": "vits-piper-it_IT-paola-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-it_IT-paola-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: See URL · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://huggingface.co/datasets/paolapersico1/Voice-Dataset-Italian",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-it_IT-paola-medium"
+    },
+    {
+      "id": "vits-piper-lv_LV-aivars-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Latvian voice — aivars (medium, lv_LV)",
+      "language": "lv",
+      "voice": "aivars",
+      "quality": "medium",
+      "languages": [
+        "lv"
+      ],
+      "asset": "vits-piper-lv_LV-aivars-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-lv_LV-aivars-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 1.0 Universal · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://huggingface.co/RaivisDejus/Piper-lv_LV-Aivars-medium",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-lv_LV-aivars-medium"
+    },
+    {
+      "id": "vits-piper-nl_NL-alex-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Dutch voice — alex (medium, nl_NL)",
+      "language": "nl",
+      "voice": "alex",
+      "quality": "medium",
+      "languages": [
+        "nl"
+      ],
+      "asset": "vits-piper-nl_NL-alex-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-nl_NL-alex-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/OHF-Voice/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-nl_NL-alex-medium"
+    },
+    {
+      "id": "vits-piper-no_NO-talesyntese-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Norwegian voice — talesyntese (medium, no_NO)",
+      "language": "no",
+      "voice": "talesyntese",
+      "quality": "medium",
+      "languages": [
+        "no"
+      ],
+      "asset": "vits-piper-no_NO-talesyntese-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-no_NO-talesyntese-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-15/",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-no_NO-talesyntese-medium"
+    },
+    {
+      "id": "vits-piper-pl_PL-gosia-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Polish voice — gosia (medium, pl_PL)",
+      "language": "pl",
+      "voice": "gosia",
+      "quality": "medium",
+      "languages": [
+        "pl"
+      ],
+      "asset": "vits-piper-pl_PL-gosia-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-pl_PL-gosia-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/OHF-Voice/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-pl_PL-gosia-medium"
+    },
+    {
+      "id": "vits-piper-pt_PT-tugao-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Portuguese voice — tugao (medium, pt_PT)",
+      "language": "pt",
+      "voice": "tugao",
+      "quality": "medium",
+      "languages": [
+        "pt"
+      ],
+      "asset": "vits-piper-pt_PT-tugao-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-pt_PT-tugao-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/OHF-Voice/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-pt_PT-tugao-medium"
+    },
+    {
+      "id": "vits-piper-ro_RO-mihai-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Romanian voice — mihai (medium, ro_RO)",
+      "language": "ro",
+      "voice": "mihai",
+      "quality": "medium",
+      "languages": [
+        "ro"
+      ],
+      "asset": "vits-piper-ro_RO-mihai-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ro_RO-mihai-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/NabuCasa/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-ro_RO-mihai-medium"
+    },
+    {
+      "id": "vits-piper-ru_RU-irina-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Russian voice — irina (medium, ru_RU)",
+      "language": "ru",
+      "voice": "irina",
+      "quality": "medium",
+      "languages": [
+        "ru"
+      ],
+      "asset": "vits-piper-ru_RU-irina-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-ru_RU-irina-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: Unknown · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/RHVoice/RHVoice",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-ru_RU-irina-medium"
+    },
+    {
+      "id": "vits-piper-sk_SK-lili-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Slovak voice — lili (medium, sk_SK)",
+      "language": "sk",
+      "voice": "lili",
+      "quality": "medium",
+      "languages": [
+        "sk"
+      ],
+      "asset": "vits-piper-sk_SK-lili-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-sk_SK-lili-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/NabuCasa/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-sk_SK-lili-medium"
+    },
+    {
+      "id": "vits-piper-sl_SI-artur-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Slovenian voice — artur (medium, sl_SI)",
+      "language": "sl",
+      "voice": "artur",
+      "quality": "medium",
+      "languages": [
+        "sl"
+      ],
+      "asset": "vits-piper-sl_SI-artur-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-sl_SI-artur-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: https://creativecommons.org/licenses/by/4.0/ · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://huggingface.co/datasets/ppisljar/artur_studio_tts/",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-sl_SI-artur-medium"
+    },
+    {
+      "id": "vits-piper-sq_AL-edon-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Albanian voice — edon (medium, sq_AL)",
+      "language": "sq",
+      "voice": "edon",
+      "quality": "medium",
+      "languages": [
+        "sq"
+      ],
+      "asset": "vits-piper-sq_AL-edon-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-sq_AL-edon-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://huggingface.co/edonseki/folsh.ai",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-sq_AL-edon-medium"
+    },
+    {
+      "id": "vits-piper-sr_RS-serbski_institut-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Serbian voice — serbski institut (medium, sr_RS)",
+      "language": "sr",
+      "voice": "serbski_institut",
+      "quality": "medium",
+      "languages": [
+        "sr"
+      ],
+      "asset": "vits-piper-sr_RS-serbski_institut-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-sr_RS-serbski_institut-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: https://creativecommons.org/licenses/by-nc-sa/4.0/ · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/marytts/serbski-institut-dsb-data",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-sr_RS-serbski_institut-medium"
+    },
+    {
+      "id": "vits-piper-sv_SE-nst-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Swedish voice — nst (medium, sv_SE)",
+      "language": "sv",
+      "voice": "nst",
+      "quality": "medium",
+      "languages": [
+        "sv"
+      ],
+      "asset": "vits-piper-sv_SE-nst-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-sv_SE-nst-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-17/",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-sv_SE-nst-medium"
+    },
+    {
+      "id": "vits-piper-tr_TR-dfki-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Turkish voice — dfki (medium, tr_TR)",
+      "language": "tr",
+      "voice": "dfki",
+      "quality": "medium",
+      "languages": [
+        "tr"
+      ],
+      "asset": "vits-piper-tr_TR-dfki-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-tr_TR-dfki-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: https://creativecommons.org/licenses/by-nc-sa/4.0/ · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/marytts/dfki-ot-data/",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-tr_TR-dfki-medium"
+    },
+    {
+      "id": "vits-piper-uk_UA-ukrainian_tts-medium",
+      "kind": "tts",
+      "engine": "piper_vits",
+      "title": "Ukrainian voice — ukrainian tts (medium, uk_UA)",
+      "language": "uk",
+      "voice": "ukrainian_tts",
+      "quality": "medium",
+      "languages": [
+        "uk"
+      ],
+      "asset": "vits-piper-uk_UA-ukrainian_tts-medium.tar.bz2",
+      "upstream": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-uk_UA-ukrainian_tts-medium.tar.bz2",
+      "release_tag": "voices-v1",
+      "licence": "voice: CC0 · Piper/sherpa-onnx: MIT/Apache-2.0",
+      "licence_url": "https://github.com/NabuCasa/voice-datasets",
+      "archive": true,
+      "keep": [],
+      "dir": "packs/tts/vits-piper-uk_UA-ukrainian_tts-medium"
     }
   ]
 }
