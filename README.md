@@ -24,7 +24,7 @@ voice recordings. A personal voice pack never goes here (see AGENTS.md).
 | Default index URL | `https://raw.githubusercontent.com/Hemues/smart-translator-languages/main/packs.json` | the app's default; `packs.json` `generated` = `2026-09-29T14:21:29Z` |
 | Index entries | 34 components: 1 Parakeet pack, 1 VAD file, 1 Omnilingual pack, 31 voices | the index file, read 2026-10-31 |
 | Releases | `packs-v1` (created 2026-09-29 13:37 UTC: Parakeet, VAD, Omnilingual), `voices-v1` (2026-09-29 14:11 UTC: 31 Piper voices) | `gh release list`, 2026-10-31 |
-| Commits on `main` | 4, from `c0e4f25` (2026-09-29) to `7885bf4` (2026-09-29). Nothing changed since. | `git log`, 2026-10-31 |
+| Commits on `main` | 5. Four content commits from `c0e4f25` (2026-09-29) to `7885bf4` (2026-09-29); then the docs-only fleet audit commit `2d580cd` (2026-10-31, committed and pushed: README, AGENTS.md, LESSONS-LEARNED.md, STORYLINE.md, docs/HOWTO-USE.md). No pack or index change since 2026-09-29. | `git log`, 2026-10-31 21:35 CET |
 | Working tree | clean (`git status` shows nothing) | `git status`, 2026-10-31 |
 | Local `dist/` folder | 2.8 GB of pack files, git-ignored, kept on the share only | `ls`, 2026-10-31 |
 | Languages with speech recognition | 25 (Parakeet) plus 15 more (Omnilingual) | the index's `languages` lists |

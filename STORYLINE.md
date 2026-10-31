@@ -11,7 +11,7 @@ This repository exists because the Smart Translator app needs speech packs and v
 holds a public index (`packs.json`) and the metadata that generates it (`components.json`), plus the scripts that describe and check
 the files. The files themselves are GitHub release assets. The repository was created on 2026-09-29, in one afternoon, with the speech
 pack (Parakeet), the voice-activity file, the Omnilingual pack and 31 Piper voices. It has been public since 2026-10-01. Nothing has
-been committed since 2026-09-29 (four commits in total). The app 0.6.0 reads this index at every start (design, not yet run on a phone).
+been committed since 2026-09-29 (four content commits in total, before the docs-only audit commit `2d580cd` of 2026-10-31). The app 0.6.0 reads this index at every start (design, not yet run on a phone).
 
 ## Timeline at a glance
 
